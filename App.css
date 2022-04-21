@@ -12,6 +12,12 @@ body{
     background-color: black;
     color: white;
     font-family: 'W95FA';
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
 }
 
 
