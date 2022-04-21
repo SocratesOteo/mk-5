@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'W95FA';
+    src: url('/fonts/W95FA.woff2') format('woff2'),
+        url('/fonts/W95FA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'W95FA';
+}
+
+
+button{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'W95FA';
+}
+
+input{
+    font-family: 'W95FA';
+    font-size: medium;
+    margin-bottom: 10px;
+    border-color: none;
+    border-width: 0;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    caret-color: white;
+}
+#username-box{
+    border-color: none;
+    margin-top: 10px;
+}
+#password{
+    margin-top: 10px;
+}
