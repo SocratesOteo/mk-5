@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, '../../dist')));
 app.set('port', process.env.PORT || 8080);
 
 app.get('/styles',(req,res)=>{
-  res.sendFile(path.join(__dirname,"../../App.css"))
+  res.sendFile(path.join(__dirname,"../App.css"))
 })
 
 var server = app.listen(app.get('port'), function() {
