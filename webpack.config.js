@@ -23,7 +23,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: './main.js'
+    filename: '[name].js'
     
 },
 
@@ -31,6 +31,12 @@ target: 'web',
 
 externals:{
     express:'express',
+},
+
+performance: {
+  hints: false,
+  maxEntrypointSize: 512000,
+  maxAssetSize: 512000
 },
 
 
