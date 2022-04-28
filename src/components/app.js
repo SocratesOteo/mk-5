@@ -46,7 +46,11 @@ class NameForm extends React.Component {
             <span>
               >>&nbsp;
             </span>
-            <input  name = "username" placeholder = "username..." id ="username-box" type="text" value={this.state.username} onChange={this.handleChange} />
+            <input  name = "username" 
+            placeholder = "username..." 
+            spellCheck = "false"
+            id ="username-box" 
+            type="text" value={this.state.username} onChange={this.handleChange} />
           </label>
             <br></br>
             <span>
@@ -59,7 +63,11 @@ class NameForm extends React.Component {
           <span>
             >>&nbsp;
           </span>
-          <input name = "password" placeholder ="password..." id='password' type="password" value={this.state.value} onChange={this.handleChange}/>
+          <input name = "password" 
+          placeholder ="password..." 
+          spellCheck = "false"
+          id='password' 
+          type="password" value={this.state.value} onChange={this.handleChange}/>
 
           </label>
       <br></br>

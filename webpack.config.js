@@ -8,14 +8,25 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     
     mode: 'development',
-    /*
-  entry: ['@babel/polyfill','./src/server/server.js'],
+    
+  entry: ['@babel/polyfill','./src/index.js'],
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
+   plugins: [
+     new HtmlWebpackPlugin({
+       title: 'Development',
+     }),
+   ],
+
+
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: './bundle.js'
+    filename: './main.js'
     
 },
-*/
+
 target: 'web',
 
 externals:{

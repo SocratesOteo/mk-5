@@ -1,3 +1,5 @@
+
+/*
 @font-face {
     font-family: 'W95FA';
     src: url('/fonts/W95FA.woff2') format('woff2'),
@@ -6,18 +8,20 @@
     font-style: normal;
     font-display: swap;
 }
-
+*/
+@font-face{
+    font-family: 'NBP ReadOut';
+    src: url('/fonts/NBP-ReadOut.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 body{
     background-color: black;
     color: white;
-    font-family: 'W95FA';
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
+    font-family:'NBP ReadOut'
+    
 }
 
 
@@ -26,11 +30,13 @@ button{
     border: none;
     color: white;
     cursor: pointer;
-    font-family: 'W95FA';
+    font-family:'NBP ReadOut';
 }
 
+
+
 input{
-    font-family: 'W95FA';
+    font-family: 'NBP ReadOut';
     font-size: medium;
     margin-bottom: 10px;
     border-color: none;
@@ -41,6 +47,24 @@ input{
     cursor: pointer;
     caret-color: white;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
 #username-box{
     border-color: none;
     margin-top: 10px;
